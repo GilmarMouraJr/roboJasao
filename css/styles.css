@@ -12,10 +12,13 @@
   --emerald950: #012d1e;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 body {
   color: var(--emerald950);
   background-color: var(--emerald50);
-  overflow-x: hidden;
 }
 .nav-link,
 .navbar-brand,
@@ -65,15 +68,15 @@ header {
   border: 1px solid var(--emerald950);
 }
 
-.btn-emerald:hover, .btn-emerald-solid:hover {
-  color: var(--emerald50);
-  background-color: var(--emerald950);
-}
-
 .btn-emerald-solid {
   border: 1px solid var(--emerald950);
   color: var(--emerald50);
   background-color: var(--emerald600);
+}
+
+.btn-emerald:hover, .btn-emerald-solid:hover {
+  color: var(--emerald50);
+  background-color: var(--emerald950);
 }
 
 .btn-emerald-clear {
@@ -93,7 +96,6 @@ header {
 }
 
 .accordion-button {
-  box-shadow: none !important;
   background-color: var(--emerald50);
 }
 
@@ -103,8 +105,8 @@ header {
   --bs-accordion-active-color: var(--emerald950);
 }
 
-.accordion-button:not(.collapsed) {
-  box-shadow: none;
+.accordion-button, .accordion-button:not(.collapsed) {
+  box-shadow: none !important;
 }
 
 .next {
