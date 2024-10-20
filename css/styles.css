@@ -118,7 +118,9 @@ header {
   color: var(--emerald50);
 }
 
-
+.carousel {
+  overflow: hidden;
+}
 
 footer {
     background-color: var(--emerald950);
