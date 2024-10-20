@@ -1,723 +1,499 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jasão</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand p-3" href="#">Jasão</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="bi bi-filter-right"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
-              <li class="nav-item">
-                <a class="nav-link" href="#robo">O Robô</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#armas">Armas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#hardware">Hardware</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#next">NEXT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#carrossel">Imagens</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#videos">Vídeos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#equipe">Argonautas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#formulario">Fale com a gente!</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container text-center my-5">
-          <div class="row">
-            <div class="col-12 col-md-6 my-auto">
-              <h1 class="display-1">Jasão</h1>
-              <h1 class="display-6">Um projeto da RoboCup FIAP</h1>
-              <p class="text-center fs-5 my-4">
-                O robô Jasão, diretamente do conto mítico dos Argonautas, chegou
-                para destruir a competição!
-              </p>
-            </div>
-            <div class="col-12 col-md-6">
-              <img
-                src="./images/JASÃO-1.jpg"
-                alt="Imagem do Arduíno do robô Jasão."
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="cards" id="robo">
-        <div class="row d-flex p-5 align-items-stretch">
-          <h1 class="display-4 text-center">O Robô</h1>
-          <div class="col-md-6 col-lg-3 my-4">
-            <div class="card h-100">
-              <img
-                src="./images/roda_amarela_com_pneu_para_chassi_879_1_2056dfa7a05ce3035ba1a7399a4c6e75.jpg"
-                class="card-img-top"
-                alt="Imagem de uma pequena roda de espuma amarela."
-              />
-              <div class="card-body">
-                <h5 class="velocidade">Velocidade</h5>
-                <p class="card-text">
-                  Jasão, com suas rodas de alta tecnologia, é o mais veloz
-                  guerreiro!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 my-4">
-            <div class="card h-100">
-              <img
-                src="./images/arduino-code.jpg"
-                class="card-img-top"
-                alt="Imagem de códigos em Arduíno."
-              />
-              <div class="card-body">
-                <h5 class="codigo">Códigos</h5>
-                <p class="card-text">
-                  Com códigos eficientes e otimizados, Jasão não desperdiça
-                  energia!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 my-4">
-            <div class="card h-100">
-              <img
-                src="./images/arma-robo.jpg"
-                class="card-img-top"
-                alt="Imagem de uma bola de isopor com alfinetes fixa em uma haste de bambu."
-              />
-              <div class="card-body">
-                <h5 class="arma">Armas</h5>
-                <p class="card-text">
-                  Com armas destrutivas, Jasão supera seus oponentes
-                  rapidamente!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 my-4">
-            <div class="card h-100">
-              <img
-                src="./images/controle-android.jpg"
-                class="card-img-top"
-                alt="Imagem de um celular sendo usado para controlar o Arduíno."
-              />
-              <div class="card-body">
-                <h5 class="controle">Controles</h5>
-                <p class="card-text">
-                  Com controles via Bluetooth, Jasão possui rápidos tempos de
-                  resposta!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="armas" id="armas">
-        <div class="row text-center">
-          <div class="col-12 col-md-6">
-            <div class="d-flex flex-column align-items-center p-5 gap-5 my-4">
-              <h1 class="display-3">Armas</h1>
-              <p class="text-center fs-5">
-                As armas de Jasão consistem de 2 servo motores que, quando
-                acionados por uma chave de fim de curso, giram em 180 graus e
-                movimentam 2 hastes com bolas de isopor e alfinetes em direção
-                ao balão inimigo!
-              </p>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center col-12 col-md-6 p-4">
-            <img
-              src="./images/arma-robo2.jpg"
-              class="img-fluid"
-              alt="Imagem de uma bola de isopor com alfinetes fixa em uma haste de bambu, fixada a um motor."
-            />
-          </div>
-        </div>
-      </section>
-      <section class="hardware" id="hardware">
-        <div class="d-flex flex-column align-items-center py-5 gap-5 row">
-          <h1 class="display-3 text-center">Hardware</h1>
-          <div class="accordion col-9 col-md-6" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  Arduíno Mega 2560
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  O Arduino Mega 2560 é uma placa de desenvolvimento poderosa e
-                  versátil, ideal para projetos que exigem uma grande quantidade
-                  de entradas e saídas digitais e analógicas.
-                  <strong>Essa placa funciona como o cérebro do robô.</strong>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Micromotor com Redutor 330 RPM
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  Um micromotor com redutor de 330 RPM (rotações por minuto) é
-                  um motor elétrico de pequeno porte acoplado a uma caixa de
-                  redução que diminui a velocidade de rotação e aumenta o
-                  torque.
-                  <strong>
-                    Ele é o responsável pelos movimentos do robô.</strong
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Micromotor Servo SG90
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  O micromotor servo SG90 é um dos servomotores mais populares
-                  para projetos de robótica e eletrônica. Ele é compacto, leve e
-                  oferece uma rotação precisa de até 180 graus, ideal para
-                  movimentos controlados e posicionamento exato.
-                  <strong
-                    >Os servos são os responsáveis por controlar as armas do
-                    robô.</strong
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  Driver Shield L293D
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  O Driver Shield L293D é uma placa de expansão que facilita o
-                  controle de motores DC e motores de passo em projetos baseados
-                  em microcontroladores, como o Arduino.
-                  <strong
-                    >Ele é utilizado para controlar os motores do
-                    Arduino.</strong
-                  >
-                  Além disso, sua integração com o Arduino torna a programação e
-                  a implementação de projetos com motores muito mais acessíveis.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive"
-                  aria-expanded="false"
-                  aria-controls="collapseFive"
-                >
-                  Módulo HC-06
-                </button>
-              </h2>
-              <div
-                id="collapseFive"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  O módulo HC-06 é um dispositivo de comunicação Bluetooth
-                  clássico, usado para estabelecer uma conexão sem fio entre um
-                  microcontrolador (como o Arduino) e outros dispositivos, como
-                  smartphones, computadores ou tablets.
-                  <strong
-                    >Ele é utilizado para enviar comandos via Android ao
-                    robô.</strong
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseSix"
-                  aria-expanded="false"
-                  aria-controls="collapseSix"
-                >
-                  Protoboard com 400 pontos
-                </button>
-              </h2>
-              <div
-                id="collapseSix"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  A protoboard com 400 pontos é uma ferramenta essencial para o
-                  desenvolvimento de circuitos eletrônicos sem a necessidade de
-                  soldagem. Com 400 furos interligados, ela oferece um espaço
-                  compacto e organizado para conectar componentes eletrônicos.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="next text-center p-5 d-flex align-items-center justify-content-center flex-column gap-5"
-        id="next"
-      >
-        <h1 class="display-3 fw-bold">NEXT FIAP</h1>
-        <p class="fs-4">
-          O NEXT é o Festival de Tecnologia e Inovação que reune, anualmente,
-          mais de dois mil jovens talentos da FIAP apresentando suas melhores
-          criações: drones, robôs, conteúdos para VR devices, aplicativos
-          mobiles e muito mais.
-        </p>
-        <a
-          href="https://www.fiap.com.br/next/"
-          class="btn btn-emerald-clear"
-          target="”_blank”"
-          >Veja mais informações sobre o NEXT 2024</a
-        >
-      </section>
-      <section class="carrossel p-3 text-center" id="carrossel">
-        <h1 class="display-3 mb-5">Imagens</h1>
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="5"
-              aria-label="Slide 6"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="6"
-              aria-label="Slide 7"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="7"
-              aria-label="Slide 8"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="8"
-              aria-label="Slide 9"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="./images/base-robo.jpg"
-                class="d-block w-100"
-                alt="Foto de uma placa em Arduino em cima de uma placa em MDF, com fios conectados."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Robô Protótipo</h5>
-                <p>
-                  Jasão em seu estágio mais inicial, no qual só haviam os
-                  motores e a placa Bluetooth.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./images/montagem-robo.jpg"
-                class="d-block w-100"
-                alt="Foto de uma placa de MDF sendo colada a outra utilizando cola quente."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Colagem do MDF</h5>
-                <p>Jasão em sua etapa de colagem do MDF usando cola quente.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./images/fios-arduino.jpg"
-                class="d-block w-100"
-                alt="Foto de uma placa Arduino com vários fios conectados."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Placa Arduíno</h5>
-                <p>
-                  Nos estágios mais avançados, Jasão possuía uma grande
-                  quantidade de fios.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./images/arma-robo3.jpg"
-                class="d-block w-100"
-                alt="Foto de uma bola de isopor com alfinetes presos, presa a uma haste de madeira."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Arma do Jasão</h5>
-                <p>
-                  Com a arma montada, já era possível finalizar a base do robô.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./images/robo-regua.jpg"
-                class="d-block w-100"
-                alt="Foto de um robô de MDF ao lado de uma régua, mostrando aproximadamente 20cm de altura"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Medidas do Jasão</h5>
-                <p>
-                  Jasão foi testado para ver se estava no limite de altura da
-                  RoboCup.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./images/cortando-led.jpg"
-                class="d-block w-100"
-                alt="Foto de um garoto cortando uma fita LED usando um alicate de corte."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Corte da Fita LED</h5>
-                <p>
-                  A fim de deixar o Jasão mais chamativo, cortamos vários
-                  trechos de fita LED.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./images/robo-cima.jpg"
-                class="d-block w-100"
-                alt="Foto do robô Jasão visto de cima."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Robô Completo</h5>
-                <p>
-                  Com todas as etapas completas, Jasão estava pronto para o
-                  NEXT.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./images/robo-lado.jpg"
-                class="d-block w-100"
-                alt="Foto do robô Jasão visto de lado, com adesivos mostrando pinturas medievais."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Pinturas Medievais</h5>
-                <p>Jasão possui, em suas laterais, pinturas de sua época!</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./images/robo-tras.jpg"
-                class="d-block w-100"
-                alt="Foto do robô Jasão visto de trás, mostrando um switch On/Off."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Switch On/Off</h5>
-                <p>
-                  A chave Liga e Desliga do Jasão está atrás dele, para não ter
-                  surpresas!
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <section class="videos" id="videos">
-        <h1 class="display-4 my-5 text-center">Vídeos</h1>
-        <div class="row p-3">
-          <div class="col-12 col-xl-6 mb-5 text-center">
-            <div class="ratio ratio-16x9">
-              <iframe
-                src="https://www.youtube.com/embed/wQGzpg3jxPI?si=1kGZGB2LaWZM7IRv"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-          <div class="col-12 col-xl-6 text-center">
-            <div class="ratio ratio-16x9">
-              <iframe
-                src="https://www.youtube.com/embed/1Ckp9JbEMvs?si=PaNJNOiZ_f0HA1_p"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section class="equipe" id="equipe">
-        <div class="row d-flex p-5 align-items-stretch">
-          <h1 class="display-4 text-center">Os Argonautas</h1>
-          <div class="col-12 col-xl-4 my-4">
-            <div class="card h-100">
-              <img
-                src="./images/eduardo.png"
-                class="card-img-top"
-                alt="Foto do Eduardo Caló."
-              />
-              <div class="card-body">
-                <h5 class="eduardo">Eduardo Caló</h5>
-                <p class="card-text">
-                  O grande construtor e engenheiro da equipe dos Argonautas!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 my-4">
-            <div class="card h-100">
-              <img
-                src="./images/fernando.png"
-                class="card-img-top"
-                alt="Foto do Fernando Nakasone."
-              />
-              <div class="card-body">
-                <h5 class="fernando">Fernando Nakasone</h5>
-                <p class="card-text">
-                  Mestre dos códigos e dos algoritmos otimizados!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 my-4">
-            <div class="card h-100">
-              <img
-                src="./images/gilmar.png"
-                class="card-img-top"
-                alt="Foto do Gilmar Moura."
-              />
-              <div class="card-body">
-                <h5 class="gilmar">Gilmar Junior</h5>
-                <p class="card-text">
-                  O planejador e criador de planos e prazos!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="formulario p-5" id="formulario">
-        <h1 class="display-4 mb-6">Quer falar com a gente?</h1>
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputName1" class="form-label"
-              >Primeiro nome</label
-            >
-            <input type="input" class="form-control" id="exampleInputName1" />
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Endereço de email</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-            <div id="emailHelp" class="form-text">
-              Seu e-mail não será compartilhado com mais ninguém.
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputText1" class="form-label"
-              >Descreva brevemente o assunto</label
-            >
-            <input
-              type="textarea"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <button type="submit" class="btn btn-emerald-solid">Enviar</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <div class="p-3 text-center">
-        <div class="d-flex justify-content-center gap-2 fs-4">
-          <a href="https://www.facebook.com/fiap/?locale=pt_BR" target="_blank"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/fiapoficial/" target="_blank"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <a href="https://www.youtube.com/@FiapBrasil" target="_blank"
-            ><i class="bi bi-youtube"></i
-          ></a>
-        </div>
-        <p>ARGONAUTAS - Uma equipe FIAP</p>
-        <div class="d-flex gap-2 justify-content-center">
-          <i class="bi bi-envelope-at"></i>
-          <p>rm557292@fiap.com.br</p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jasão</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand p-3" href="#">Jasão</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-filter-right"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#robo">O Robô</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#armas">Armas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hardware">Hardware</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#next">NEXT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carrossel">Imagens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#videos">Vídeos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#equipe">Argonautas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formulario">Fale com a gente!</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container text-center my-5">
+        <div class="row">
+          <div class="col-12 col-md-6 my-auto">
+            <h1 class="display-1">Jasão</h1>
+            <h1 class="display-6">Um projeto da RoboCup FIAP</h1>
+            <p class="text-center fs-5 my-4">
+              O robô Jasão, diretamente do conto mítico dos Argonautas, chegou
+              para destruir a competição!
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="./images/JASÃO-1.jpg" alt="Imagem do Arduíno do robô Jasão." class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cards" id="robo">
+      <div class="row d-flex p-5 align-items-stretch">
+        <h1 class="display-4 text-center">O Robô</h1>
+        <div class="col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img src="./images/roda_amarela_com_pneu_para_chassi_879_1_2056dfa7a05ce3035ba1a7399a4c6e75.jpg"
+              class="card-img-top" alt="Imagem de uma pequena roda de espuma amarela." />
+            <div class="card-body">
+              <h5 class="velocidade">Velocidade</h5>
+              <p class="card-text">
+                Jasão, com suas rodas de alta tecnologia, é o mais veloz
+                guerreiro!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img src="./images/arduino-code.jpg" class="card-img-top" alt="Imagem de códigos em Arduíno." />
+            <div class="card-body">
+              <h5 class="codigo">Códigos</h5>
+              <p class="card-text">
+                Com códigos eficientes e otimizados, Jasão não desperdiça
+                energia!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img src="./images/arma-robo.jpg" class="card-img-top"
+              alt="Imagem de uma bola de isopor com alfinetes fixa em uma haste de bambu." />
+            <div class="card-body">
+              <h5 class="arma">Armas</h5>
+              <p class="card-text">
+                Com armas destrutivas, Jasão supera seus oponentes
+                rapidamente!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img src="./images/controle-android.jpg" class="card-img-top"
+              alt="Imagem de um celular sendo usado para controlar o Arduíno." />
+            <div class="card-body">
+              <h5 class="controle">Controles</h5>
+              <p class="card-text">
+                Com controles via Bluetooth, Jasão possui rápidos tempos de
+                resposta!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="armas" id="armas">
+      <div class="row text-center">
+        <div class="col-12 col-md-6">
+          <div class="d-flex flex-column align-items-center p-5 gap-5 my-4">
+            <h1 class="display-3">Armas</h1>
+            <p class="text-center fs-5">
+              As armas de Jasão consistem de 2 servo motores que, quando
+              acionados por uma chave de fim de curso, giram em 180 graus e
+              movimentam 2 hastes com bolas de isopor e alfinetes em direção
+              ao balão inimigo!
+            </p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center col-12 col-md-6 p-4">
+          <img src="./images/arma-robo2.jpg" class="img-fluid"
+            alt="Imagem de uma bola de isopor com alfinetes fixa em uma haste de bambu, fixada a um motor." />
+        </div>
+      </div>
+    </section>
+    <section class="hardware" id="hardware">
+      <div class="d-flex flex-column align-items-center py-5 gap-5 row">
+        <h1 class="display-3 text-center">Hardware</h1>
+        <div class="accordion col-9 col-md-6" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Arduíno Mega 2560
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                O Arduino Mega 2560 é uma placa de desenvolvimento poderosa e
+                versátil, ideal para projetos que exigem uma grande quantidade
+                de entradas e saídas digitais e analógicas.
+                <strong>Essa placa funciona como o cérebro do robô.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Micromotor com Redutor 330 RPM
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Um micromotor com redutor de 330 RPM (rotações por minuto) é
+                um motor elétrico de pequeno porte acoplado a uma caixa de
+                redução que diminui a velocidade de rotação e aumenta o
+                torque.
+                <strong>
+                  Ele é o responsável pelos movimentos do robô.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Micromotor Servo SG90
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                O micromotor servo SG90 é um dos servomotores mais populares
+                para projetos de robótica e eletrônica. Ele é compacto, leve e
+                oferece uma rotação precisa de até 180 graus, ideal para
+                movimentos controlados e posicionamento exato.
+                <strong>Os servos são os responsáveis por controlar as armas do
+                  robô.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Driver Shield L293D
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                O Driver Shield L293D é uma placa de expansão que facilita o
+                controle de motores DC e motores de passo em projetos baseados
+                em microcontroladores, como o Arduino.
+                <strong>Ele é utilizado para controlar os motores do
+                  Arduino.</strong>
+                Além disso, sua integração com o Arduino torna a programação e
+                a implementação de projetos com motores muito mais acessíveis.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Módulo HC-06
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                O módulo HC-06 é um dispositivo de comunicação Bluetooth
+                clássico, usado para estabelecer uma conexão sem fio entre um
+                microcontrolador (como o Arduino) e outros dispositivos, como
+                smartphones, computadores ou tablets.
+                <strong>Ele é utilizado para enviar comandos via Android ao
+                  robô.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Protoboard com 400 pontos
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                A protoboard com 400 pontos é uma ferramenta essencial para o
+                desenvolvimento de circuitos eletrônicos sem a necessidade de
+                soldagem. Com 400 furos interligados, ela oferece um espaço
+                compacto e organizado para conectar componentes eletrônicos.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="next text-center p-5 d-flex align-items-center justify-content-center flex-column gap-5" id="next">
+      <h1 class="display-3 fw-bold">NEXT FIAP</h1>
+      <p class="fs-4">
+        O NEXT é o Festival de Tecnologia e Inovação que reune, anualmente,
+        mais de dois mil jovens talentos da FIAP apresentando suas melhores
+        criações: drones, robôs, conteúdos para VR devices, aplicativos
+        mobiles e muito mais.
+      </p>
+      <a href="https://www.fiap.com.br/next/" class="btn btn-emerald-clear" target="”_blank”">Veja mais informações
+        sobre o NEXT 2024</a>
+    </section>
+    <section class="carrossel p-3 text-center" id="carrossel">
+      <h1 class="display-3 mb-5">Imagens</h1>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+            aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+            aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+            aria-label="Slide 9"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/base-robo.jpg" class="d-block w-100"
+              alt="Foto de uma placa em Arduino em cima de uma placa em MDF, com fios conectados." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Robô Protótipo</h5>
+              <p>
+                Jasão em seu estágio mais inicial, no qual só haviam os
+                motores e a placa Bluetooth.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/montagem-robo.jpg" class="d-block w-100"
+              alt="Foto de uma placa de MDF sendo colada a outra utilizando cola quente." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Colagem do MDF</h5>
+              <p>Jasão em sua etapa de colagem do MDF usando cola quente.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/fios-arduino.jpg" class="d-block w-100"
+              alt="Foto de uma placa Arduino com vários fios conectados." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Placa Arduíno</h5>
+              <p>
+                Nos estágios mais avançados, Jasão possuía uma grande
+                quantidade de fios.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/arma-robo3.jpg" class="d-block w-100"
+              alt="Foto de uma bola de isopor com alfinetes presos, presa a uma haste de madeira." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Arma do Jasão</h5>
+              <p>
+                Com a arma montada, já era possível finalizar a base do robô.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/robo-regua.jpg" class="d-block w-100"
+              alt="Foto de um robô de MDF ao lado de uma régua, mostrando aproximadamente 20cm de altura" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Medidas do Jasão</h5>
+              <p>
+                Jasão foi testado para ver se estava no limite de altura da
+                RoboCup.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cortando-led.jpg" class="d-block w-100"
+              alt="Foto de um garoto cortando uma fita LED usando um alicate de corte." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Corte da Fita LED</h5>
+              <p>
+                A fim de deixar o Jasão mais chamativo, cortamos vários
+                trechos de fita LED.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/robo-cima.jpg" class="d-block w-100" alt="Foto do robô Jasão visto de cima." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Robô Completo</h5>
+              <p>
+                Com todas as etapas completas, Jasão estava pronto para o
+                NEXT.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/robo-lado.jpg" class="d-block w-100"
+              alt="Foto do robô Jasão visto de lado, com adesivos mostrando pinturas medievais." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pinturas Medievais</h5>
+              <p>Jasão possui, em suas laterais, pinturas de sua época!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/robo-tras.jpg" class="d-block w-100"
+              alt="Foto do robô Jasão visto de trás, mostrando um switch On/Off." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Switch On/Off</h5>
+              <p>
+                A chave Liga e Desliga do Jasão está atrás dele, para não ter
+                surpresas!
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="videos" id="videos">
+      <h1 class="display-4 my-5 text-center">Vídeos</h1>
+      <div class="row p-3">
+        <div class="col-12 col-xl-6 mb-5 text-center">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/wQGzpg3jxPI?si=1kGZGB2LaWZM7IRv" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 text-center">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/1Ckp9JbEMvs?si=PaNJNOiZ_f0HA1_p" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="equipe" id="equipe">
+      <div class="row d-flex p-5 align-items-stretch">
+        <h1 class="display-4 text-center">Os Argonautas</h1>
+        <div class="col-12 col-xl-4 my-4">
+          <div class="card h-100">
+            <img src="./images/eduardo.png" class="card-img-top" alt="Foto do Eduardo Caló." />
+            <div class="card-body">
+              <h5 class="eduardo">Eduardo Caló</h5>
+              <p class="card-text">
+                O grande construtor e engenheiro da equipe dos Argonautas!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 my-4">
+          <div class="card h-100">
+            <img src="./images/fernando.png" class="card-img-top" alt="Foto do Fernando Nakasone." />
+            <div class="card-body">
+              <h5 class="fernando">Fernando Nakasone</h5>
+              <p class="card-text">
+                Mestre dos códigos e dos algoritmos otimizados!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 my-4">
+          <div class="card h-100">
+            <img src="./images/gilmar.png" class="card-img-top" alt="Foto do Gilmar Moura." />
+            <div class="card-body">
+              <h5 class="gilmar">Gilmar Junior</h5>
+              <p class="card-text">
+                O planejador e criador de planos e prazos!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="formulario p-5" id="formulario">
+      <h1 class="display-4 mb-6">Quer falar com a gente?</h1>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputName1" class="form-label">Primeiro nome</label>
+          <input type="input" class="form-control" id="exampleInputName1" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Endereço de email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          <div id="emailHelp" class="form-text">
+            Seu e-mail não será compartilhado com mais ninguém.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputText1" class="form-label">Descreva brevemente o assunto</label>
+          <input type="textarea" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+        </div>
+        <button type="submit" class="btn btn-emerald-solid">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="p-3 text-center">
+      <div class="d-flex justify-content-center gap-2 fs-4">
+        <a href="https://www.facebook.com/fiap/?locale=pt_BR" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/fiapoficial/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@FiapBrasil" target="_blank"><i class="bi bi-youtube"></i></a>
+      </div>
+      <p>ARGONAUTAS - Uma equipe FIAP</p>
+      <div class="d-flex gap-2 justify-content-center">
+        <i class="bi bi-envelope-at"></i>
+        <p>rm557292@fiap.com.br</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
