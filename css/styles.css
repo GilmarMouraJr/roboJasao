@@ -1,0 +1,129 @@
+:root {
+  --emerald50: #ebfef3;
+  --emerald100: #d0fbe1;
+  --emerald200: #a4f6c7;
+  --emerald300: #6aebab;
+  --emerald400: #2ed989;
+  --emerald500: #0abd6f;
+  --emerald600: #009b5b;
+  --emerald700: #007c4c;
+  --emerald800: #03623d;
+  --emerald900: #035134;
+  --emerald950: #012d1e;
+}
+
+body {
+  color: var(--emerald950);
+  background-color: var(--emerald50);
+  overflow-x: hidden;
+}
+.nav-link,
+.navbar-brand,
+.bi-filter-right {
+  color: var(--emerald50);
+}
+
+.navbar-toggler {
+  box-shadow: none !important;
+  border: 2px solid var(--emerald50);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+  transition: 0.5s;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+  color: var(--emerald400);
+}
+
+header {
+  background-color: var(--emerald950);
+}
+
+.cards,
+.hardware, .carrossel, .equipe {
+  background-color: var(--emerald900);
+  color: var(--emerald50);
+}
+
+.card-body {
+  background-color: var(--emerald50);
+  color: var(--emerald900);
+}
+
+.card {
+    transition: .3s;
+}
+
+.card:hover {
+    scale: 1.05;
+}
+
+.btn-emerald {
+  border: 1px solid var(--emerald950);
+}
+
+.btn-emerald:hover, .btn-emerald-solid:hover {
+  color: var(--emerald50);
+  background-color: var(--emerald950);
+}
+
+.btn-emerald-solid {
+  border: 1px solid var(--emerald950);
+  color: var(--emerald50);
+  background-color: var(--emerald600);
+}
+
+.btn-emerald-clear {
+  border: 1px solid var(--emerald950);
+  background-color: var(--emerald50);
+  color: var(--emerald950);
+}
+
+.btn-emerald-clear:hover{
+  background-color: var(--emerald950);
+}
+
+.armas img,
+.hero img {
+  border-radius: 10px;
+  border: 2px solid var(--emerald950);
+}
+
+.accordion-button {
+  box-shadow: none !important;
+  background-color: var(--emerald50);
+}
+
+.accordion {
+  --bs-accordion-btn-bg: var(--emerald50);
+  --bs-accordion-active-bg: var(--emerald300);
+  --bs-accordion-active-color: var(--emerald950);
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.next {
+  background-image: url(../images/robocup.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: var(--emerald50);
+}
+
+
+
+footer {
+    background-color: var(--emerald950);
+    color: var(--emerald50);
+    font-weight: 300;
+}
+
+footer a i {
+  color: var(--emerald50);
+}
